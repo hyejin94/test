@@ -1,0 +1,7 @@
+git init // git과 vscode 연동을 위해 쓰는거임
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/hyejin94/test.git
+git push -u origin master
+
+terminal 창 -> ctrl+shift+`
