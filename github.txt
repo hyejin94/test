@@ -1,5 +1,11 @@
 git init // git과 vscode 연동을 위해 쓰는거임
 git add README.md
+// PS C:\Users\sorat\Desktop\study\vue> git add github.txt -> 개별파일
+PS C:\Users\sorat\Desktop\study\vue> git add .\2020-08-01\test.html -> .은 전체임
+PS C:\Users\sorat\Desktop\study\vue> git add .\2020-08-01\ -> 
+'git add . '을 많이 사용함, 알아서 변경된 코드만 반영되기 때문
+
+
 git commit -m "first commit"
 git remote add origin https://github.com/hyejin94/test.git
 git push -u origin master
