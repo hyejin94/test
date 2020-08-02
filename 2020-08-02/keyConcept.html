@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue js key concept</title>
+</head>
+
+<body>
+  <!-- template 기법 예시 -->
+  <div v-if="show"></div>
+
+  <!-- 루트 템플릿 -->
+  <div id="app"></div>
+
+  <!-- 데이터 바인딩 -->
+  <div id="text"></div>
+  <script>
+    var el = document.getElementById('text');
+    el.innerText = '새로운 글자';
+  </script>
+
+  <!-- 'v-'로 시작하는 디렉티브 -->
+  <div key="id"></div>
+  <div v-bind:key="id"></div>
+</body>
+
+</html>
