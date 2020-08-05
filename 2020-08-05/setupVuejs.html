@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue js setup</title>
+  <!-- <link rel="stylesheet" href="main.css"> -->
+</head>
+
+<body>
+  <div id="app">
+    <!-- 여기 #app 내부에 템플릿을 출력할 것입니다. -->
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  <script>
+    var app = new Vue({
+      el: "#app"
+    })
+
+    /* 시작하기 전부터 오류가 발생하는 경우: '[Vue warn]: Cannot find element: #app'
+       이러한 경우 인스턴스 생성 부분을 body 태그의 마지막 부분에 옮기거나 다음과 같이 사용하세요.  
+    document.addEventListener("DOMContentLoaded", function(){
+      window.app = new Vue
+    }) 
+    */
+  </script>
+</body>
+
+</html>
