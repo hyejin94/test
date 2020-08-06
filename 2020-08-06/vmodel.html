@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue js v-model</title>
+</head>
+
+<body>
+  <div id="app">
+    <p>{{ message }}</p>
+    <input type="text" v-model="message">
+    <input type="text" v-model.number="count">
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data:{
+        message: '초기 메시지',
+        count: '1'
+      }
+    })
+  </script>
+</body>
+
+</html>
