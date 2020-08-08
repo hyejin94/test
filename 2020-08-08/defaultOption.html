@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue js default option</title>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  <script>
+    var app = new Vue({
+      el: '#app', // 마운트할 요소
+      data: { // 애플리케이션에서 사용할 데이터
+        message: 'Vue.js',
+      },
+      computed: { // 산출 속성
+        computedMessage: function () {
+          return this.message + '!'
+        }
+      },
+      created: function () { // 라이프 사이클 훅
+        // 하고 싶은 처리
+        console.log('created')
+      },
+      methods: function () { // 애플리케이션에서 사용할 메서드
+        // 하고 싶은 처리
+      }
+    })
+  </script>
+</body>
+
+</html>
